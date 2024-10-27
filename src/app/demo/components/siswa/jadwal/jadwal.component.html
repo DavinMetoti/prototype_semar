@@ -1,0 +1,31 @@
+<div class="card">
+    <p-tabView>
+        <p-tabPanel header="Calender">
+            <full-calendar [options]="calendarOptions"></full-calendar>
+        </p-tabPanel>
+        <p-tabPanel header="List">
+            <div class="card md:flex justify-content-between align-items-center">
+                <div class="content">
+                    <h5 class="font-bold md:text-2xl text-lg">Jumat, 01 November 2024</h5>
+                    <p>Keterangan : <p-tag severity="success" value="Masuk" /></p>
+                </div>
+                <div class="button gap-2 flex md:justify-content-start justify-content-between md:mt-0 mt-2">
+                    <button pButton class="p-button-success" icon="pi pi-calendar-plus"
+                        (click)="createEvent()"></button>
+                    <button pButton class="p-button-primary" icon="pi pi-eye" (click)="createEvent()"></button>
+                </div>
+            </div>
+            <div class="card md:flex justify-content-between align-items-center">
+                <div class="content">
+                    <h5 class="font-bold md:text-2xl text-lg">Sabtu, 02 November 2024</h5>
+                    <p>Keterangan : <p-tag severity="danger" value="Libur" /></p>
+                </div>
+                <div class="button gap-2 flex md:justify-content-start justify-content-between md:mt-0 mt-2">
+                    <button pButton class="p-button-success" icon="pi pi-calendar-plus"
+                        (click)="createEvent()"></button>
+                    <button pButton class="p-button-primary" icon="pi pi-eye" (click)="createEvent()"></button>
+                </div>
+            </div>
+        </p-tabPanel>
+    </p-tabView>
+</div>
