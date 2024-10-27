@@ -9,6 +9,7 @@ import { ButtonModule } from 'primeng/button';
 import { MessagesModule } from 'primeng/messages';
 import { MessageService } from 'primeng/api';
 import { TagModule } from 'primeng/tag';
+import { ToastModule } from 'primeng/toast';
 
 
 
@@ -26,7 +27,8 @@ import { TagModule } from 'primeng/tag';
     TabViewModule,
     ButtonModule,
     MessagesModule,
-    TagModule
+    TagModule,
+    ToastModule
   ],
   providers: [
     MessageService

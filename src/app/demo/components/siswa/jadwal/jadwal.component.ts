@@ -54,9 +54,9 @@ export class JadwalComponent {
     };
 
     this.googleCalendarService.addEvent(event).then(response => {
-      console.log('Acara berhasil ditambahkan:', response);
+      this.message.add({ severity: 'success', summary: 'Berhasil', detail: 'Berhasil menambahkan pengingat ke kalander' })
     }).catch(error => {
-      console.error('Gagal menambahkan acara:', error);
+      this.message.add({ severity: 'error', summary: 'Gagal', detail: 'Gagal menambahkan pengingat ke kalander' })
     });
   }
 
